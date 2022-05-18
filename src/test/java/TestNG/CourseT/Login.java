@@ -21,7 +21,7 @@ public class Login {
 		System.out.println("login sucess");
 	}
 	
-	@Test(priority=2, description = "metodo logout")
+	@Test(priority=2, description = "metodo logout", groups = "bvt")
 	public void logOutTest() {
 		System.out.println("Logout Success");
 	}

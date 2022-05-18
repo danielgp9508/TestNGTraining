@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Ui Regression">
-  <test name="Regression Testing">
-  <groups>
-    <run>
-      <include name="userRegistration"/>
-    </run>
-  </groups>
-    <classes>
-      <class name="TestNG.CourseT.GroupDemoTest"/>
-      <class name="TestNG.CourseT.Login"/>
-    </classes>
-  </test> <!-- Test -->
+	<test name="Regression Testing">
+		<groups>
+			<run>
+				<include name="regression" />
+			</run>
+		</groups>
+		<classes>
+			<class name="TestNG.CourseT.GroupDemoTest" />
+		</classes>
+	</test>
+	<test name="Regression Testing without groups tag">
+		<classes>
+			<class name="TestNG.CourseT.Login" />
+		</classes>
+	</test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -1,61 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="1" total="6" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-12-21T23:57:45 COT" name="Default suite" finished-at="2021-12-21T23:57:54 COT" duration-ms="8920">
+  <suite started-at="2022-04-18T12:19:01 COT" name="Ui Regression" finished-at="2022-04-18T12:19:01 COT" duration-ms="87">
     <groups>
+      <group name="bvt">
+        <method signature="GroupDemoTest.test3()[pri:0, instance:TestNG.CourseT.GroupDemoTest@4f2b503c]" name="test3" class="TestNG.CourseT.GroupDemoTest"/>
+        <method signature="Login.logOutTest()[pri:2, instance:TestNG.CourseT.Login@4686afc2]" name="logOutTest" class="TestNG.CourseT.Login"/>
+      </group> <!-- bvt -->
+      <group name="regression">
+        <method signature="GroupDemoTest.test1()[pri:1, instance:TestNG.CourseT.GroupDemoTest@4f2b503c]" name="test1" class="TestNG.CourseT.GroupDemoTest"/>
+        <method signature="GroupDemoTest.test2()[pri:2, instance:TestNG.CourseT.GroupDemoTest@4f2b503c]" name="test2" class="TestNG.CourseT.GroupDemoTest"/>
+        <method signature="GroupDemoTest.test3()[pri:0, instance:TestNG.CourseT.GroupDemoTest@4f2b503c]" name="test3" class="TestNG.CourseT.GroupDemoTest"/>
+        <method signature="Login.loginTest()[pri:1, instance:TestNG.CourseT.Login@4686afc2]" name="loginTest" class="TestNG.CourseT.Login"/>
+      </group> <!-- regression -->
+      <group name="userRegistration">
+        <method signature="GroupDemoTest.test1()[pri:1, instance:TestNG.CourseT.GroupDemoTest@4f2b503c]" name="test1" class="TestNG.CourseT.GroupDemoTest"/>
+        <method signature="GroupDemoTest.test2()[pri:2, instance:TestNG.CourseT.GroupDemoTest@4f2b503c]" name="test2" class="TestNG.CourseT.GroupDemoTest"/>
+        <method signature="GroupDemoTest.test3()[pri:0, instance:TestNG.CourseT.GroupDemoTest@4f2b503c]" name="test3" class="TestNG.CourseT.GroupDemoTest"/>
+      </group> <!-- userRegistration -->
     </groups>
-    <test started-at="2021-12-21T23:57:45 COT" name="Default test" finished-at="2021-12-21T23:57:54 COT" duration-ms="8920">
-      <class name="TestNG.CourseT.VerifyTitle">
-        <test-method signature="titleTest()[pri:0, instance:TestNG.CourseT.VerifyTitle@20ccf40b]" started-at="2021-12-21T23:57:45 COT" name="titleTest" finished-at="2021-12-21T23:57:54 COT" duration-ms="8831" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Artículos electrónicos, autos, ropa, objetos de colección, cupones y más | eBaya] but found [Artículos electrónicos, autos, ropa, objetos de colección, cupones y más | eBay]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Artículos electrónicos, autos, ropa, objetos de colección, cupones y más | eBaya] but found [Artículos electrónicos, autos, ropa, objetos de colección, cupones y más | eBay]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at org.testng.Assert.assertEquals(Assert.java:639)
-at TestNG.CourseT.VerifyTitle.titleTest(VerifyTitle.java:24)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+    <test started-at="2022-04-18T12:19:01 COT" name="Regression Testing" finished-at="2022-04-18T12:19:01 COT" duration-ms="26">
+      <class name="TestNG.CourseT.GroupDemoTest">
+        <test-method is-config="true" signature="testBeforeGroups()[pri:0, instance:TestNG.CourseT.GroupDemoTest@4f2b503c]" started-at="2022-04-18T12:19:01 COT" name="testBeforeGroups" finished-at="2022-04-18T12:19:01 COT" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- titleTest -->
-      </class> <!-- TestNG.CourseT.VerifyTitle -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- testBeforeGroups -->
+        <test-method signature="test3()[pri:0, instance:TestNG.CourseT.GroupDemoTest@4f2b503c]" started-at="2022-04-18T12:19:01 COT" name="test3" finished-at="2022-04-18T12:19:01 COT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method signature="test1()[pri:1, instance:TestNG.CourseT.GroupDemoTest@4f2b503c]" started-at="2022-04-18T12:19:01 COT" name="test1" finished-at="2022-04-18T12:19:01 COT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method signature="test2()[pri:2, instance:TestNG.CourseT.GroupDemoTest@4f2b503c]" started-at="2022-04-18T12:19:01 COT" name="test2" finished-at="2022-04-18T12:19:01 COT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+      </class> <!-- TestNG.CourseT.GroupDemoTest -->
+    </test> <!-- Regression Testing -->
+    <test started-at="2022-04-18T12:19:01 COT" name="Regression Testing without groups tag" finished-at="2022-04-18T12:19:01 COT" duration-ms="3">
+      <class name="TestNG.CourseT.Login">
+        <test-method is-config="true" signature="beforeLogin()[pri:0, instance:TestNG.CourseT.Login@4686afc2]" started-at="2022-04-18T12:19:01 COT" name="beforeLogin" finished-at="2022-04-18T12:19:01 COT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeLogin -->
+        <test-method signature="loginTest()[pri:1, instance:TestNG.CourseT.Login@4686afc2]" started-at="2022-04-18T12:19:01 COT" name="loginTest" description="metodo login" finished-at="2022-04-18T12:19:01 COT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="logOutTest()[pri:2, instance:TestNG.CourseT.Login@4686afc2]" started-at="2022-04-18T12:19:01 COT" name="logOutTest" description="metodo logout" finished-at="2022-04-18T12:19:01 COT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutTest -->
+        <test-method is-config="true" signature="afterLogout()[pri:0, instance:TestNG.CourseT.Login@4686afc2]" started-at="2022-04-18T12:19:01 COT" name="afterLogout" finished-at="2022-04-18T12:19:01 COT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterLogout -->
+      </class> <!-- TestNG.CourseT.Login -->
+    </test> <!-- Regression Testing without groups tag -->
+  </suite> <!-- Ui Regression -->
 </testng-results>
